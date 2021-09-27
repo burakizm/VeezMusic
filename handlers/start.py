@@ -37,7 +37,7 @@ async def start_(client: Client, message: Message):
 
 💡 **Botun tüm komutları ve özellikleri » 📚 komut butonu!**
 
-❓ **Tüm özellikler için sadece tıklayın ;/help**
+❓ **Tüm özellikler için tıklayın ;/help**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
@@ -64,7 +64,7 @@ async def start_(client: Client, message: Message):
                         "🌐Tag ve DC oyunu ", url="https://t.me/{GROUP_SUPPORT")
                 ],[
                     InlineKeyboardButton(
-                        "🧪 Grubunuza özel bot yapmak için 🧪", url="https://t.me/Baykaoss"
+                        "🧪 Grubunuza özel bot yapmak için 🧪", url="https://t.me/burakizm"
                     )
                 ]
             ]
@@ -79,15 +79,15 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **bot çalışıyor...**\n<b>💠 **uptime:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ Grup", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Kanal", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
             ]
