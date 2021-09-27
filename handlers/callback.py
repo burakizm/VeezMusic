@@ -10,7 +10,7 @@ from handlers.play import cb_admin_check
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>✨ **Welcome user, i'm {query.message.from_user.mention}** \n
+        f"""<b>✨ **Merhaba, ben {query.message.from_user.mention}** \n
 💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) telegram sesli sohbetlerinde müzik çalabilir !**
 
 💡 **Tüm bot komutlarını ve nasıl çalıştıklarını aşağıdaki butona tıklayarak öğrenin. » 📚 komut butonu!**
@@ -39,10 +39,10 @@ async def cbstart(_, query: CallbackQuery):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🌐 tag botu", url="https://t.me/UtagOnline_bot")
+                        "🌐 tag botu", url="https://t.me/flackwardc_bot")
                 ],[
                     InlineKeyboardButton(
-                        "🧪Grubunuza özel bot kurmak için 🧪", url="https://t.me/Baykaoss"
+                        "🧪Grubunuza özel bot kurmak için 🧪", url="https://t.me/burakizm"
                     )
                 ]
             ]
@@ -104,8 +104,8 @@ async def cbbasic(_, query: CallbackQuery):
 
 🎧 [ GRUP VC CMD ]
 
-/Oynat (şarkı adı) - youtube'dan şarkı çal
-/Cal (şarkı adı) - doğrudan youtube'dan şarkı çal
+/oynat (şarkı adı) - youtube'dan şarkı çal
+/cal (şarkı adı) - doğrudan youtube'dan şarkı çal
 /stream (sesi yanıtla) - ses dosyasını kullanarak şarkıyı çal
 /playlist - listedeki şarkıyı sıraya koyar
 /song (şarkı adı) - youtube'dan şarkı indir
@@ -171,7 +171,7 @@ async def cbadmin(_, query: CallbackQuery):
 /Durdur - müzik akışını duraklat
 /Devam - müziğin duraklatıldığını yeniden başlat
 /atla - sonraki şarkıya atla
-/Son - müzik akışını durdur
+/son - müzik akışını durdur
 /userbotjoin - asistanı grubunuza katılmaya davet edin
 /auth - müzik botunu kullanmak için yetkili kullanıcı
 /deauth - müzik botu kullanmak için yetkisiz
