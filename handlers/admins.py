@@ -1,4 +1,4 @@
-# Copyright (C) 2021 VeezMusicProject
+# Copyright (C) 2021 Mehmetbaba55 MusicProject
 
 import traceback
 import asyncio
